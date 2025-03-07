@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>GameBlog - Tu Blog de Videojuegos</title>
+
+<link rel="stylesheet" type="text/css" href="css/estilos.css" />
+</head>
+<body>
+<!-- Encabezado principal -->
+<h1>GameBlog</h1>
+<hr/>
+<!-- Menú de navegación -->
+<div>
+<h2>Menú</h2>
+<ul>
+<li><a href="#ultimas-resenas">Últimas Reseñas</a></li>
+<li><a href="#juegos-populares">Juegos Populares</a></li>
+<li><a href="#comparativa">Comparativa</a></li>
+<li><a href="#opiniones">Tu Opinión</a></li>
+<li><a href="#articulos-destacados">Articulos destacados</a></li>
+</ul>
+</div>
+<!-- Sección de últimas reseñas -->
+<div id="ultimas-resenas">
+<h2>Últimas Reseñas</h2>
+<div>
+<h3>Call of Duty: Modern Warfare</h3>
+<img src="cod.jpg" alt="Imagen de Call of Duty" width="300" height="200"/>
+
+<p>La última entrega de la saga Call of Duty nos trae gráficos impresionantes y una jugabilidad mejorada. La campaña ofrece una historia intensa y realista, con personajes memorables y giros argumentales inesperados. El multijugador es frenético, con mapas bien diseñados y un arsenal variado que se adapta a todos los estilos de juego. Sin embargo, algunos jugadores han señalado problemas de equilibrio en ciertas armas y la necesidad de ajustes en el matchmaking. Aun así, sigue siendo una opción sólida para los amantes de los shooters....</p>
+</div>
+<div>
+<h3>Mobile Legends</h3>
+<img src="mobile.jpg" alt="Imagen de Mobile Legends" width="300" height="200"/>
+<p>Mobile Legends es un MOBA para móviles que ha ganado popularidad gracias a su jugabilidad dinámica y accesible. Ofrece una gran variedad de héroes con habilidades únicas, permitiendo estrategias diversas en cada partida. El sistema de emparejamiento es rápido, aunque a veces los equipos pueden quedar desbalanceados. Los gráficos son coloridos y llamativos, pero no exigen demasiados recursos, lo que permite jugar en dispositivos de gama baja. Es un título ideal para quienes buscan una experiencia MOBA sin la complejidad de otros juegos del género....</p>
+</div>
+<div>
+    <h3>FIFA24</h3>
+    <img src="Fifa24.jpeg" alt="Imagen de Call of Duty" width="300" height="200"/>
+    
+    <p>FIFA 24 sigue siendo el rey de los juegos de fútbol, con mejoras en la física del balón y en la inteligencia artificial de los jugadores. Los modos de juego incluyen el clásico Carrera, Ultimate Team y Volta, brindando opciones para todo tipo de jugadores. Sin embargo, muchos usuarios han criticado la presencia de microtransacciones en Ultimate Team, lo que puede afectar la competitividad. A nivel gráfico, los estadios, jugadores y animaciones han sido pulidos para ofrecer una experiencia más realista. En general, es una buena opción para los fanáticos del fútbol, aunque no aporta cambios revolucionarios respecto a ediciones anteriores.....</p>
+    </div>
+</div>
+<!-- Sección de juegos populares -->
+<div id="juegos-populares">
+<h2>Juegos Populares del Mes</h2>
+<table>
+<thead>
+<tr>
+<th>Juego</th>
+<th>Género</th>
+<th>Plataforma</th>
+<th>Calificación</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Call of Duty</td>
+<td>Shooter</td>
+<td>Consola/PC</td>
+<td>9/10</td>
+
+</tr>
+<tr>
+<td>Mobile Legends</td>
+<td>MOBA</td>
+<td>Móvil</td>
+<td>8.5/10</td>
+</tr>
+<tr>
+<td>FIFA 24</td>
+<td>Deportes</td>
+<td>Consola/PC</td>
+<td>8/10</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Tabla comparativa -->
+<div id="comparativa">
+<h2>Comparativa de Shooters</h2>
+<table>
+<thead>
+<tr>
+<th>Característica</th>
+<th>Call of Duty</th>
+<th>Battlefield</th>
+<th>PUBG</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Gráficos</td>
+<td>90%</td>
+<td>95%</td>
+<td>85%</td>
+</tr>
+<tr>
+<td>Jugabilidad</td>
+<td>95%</td>
+<td>90%</td>
+<td>88%</td>
+</tr>
+<tr>
+<td>Comunidad</td>
+<td>100%</td>
+<td>85%</td>
+<td>90%</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Formulario de opiniones -->
+<div id="opiniones">
+<h2>¡Comparte tu Opinión!</h2>
+<form>
+<div>
+<label for="nombre">Nombre de Usuario:</label><br/>
+
+<input type="text" id="nombre" name="nombre"/>
+</div>
+<div>
+<label for="juego">Juego que quieres comentar:</label><br/>
+<input type="text" id="juego" name="juego"/>
+</div>
+<div>
+<label for="plataforma">Plataforma:</label><br/>
+<select id="plataforma" name="plataforma">
+<option value="pc">PC</option>
+<option value="ps5">PlayStation 5</option>
+<option value="xbox">Xbox Series X</option>
+<option value="switch">Nintendo Switch</option>
+<option value="movil">Móvil</option>
+</select>
+</div>
+<div>
+<label for="opinion">Tu opinión:</label><br/>
+<textarea id="opinion" name="opinion" rows="4" cols="50"></textarea>
+</div>
+<div>
+<label for="calificacion">Calificación (1-10):</label><br/>
+<input type="number" id="calificacion" name="calificacion" min="1" max="10"/>
+</div>
+<div>
+<input type="submit" value="Enviar Opinión"/>
+</div>
+</form>
+</div>
+
+<!-- Artículos destacados (NUEVA SECCIÓN) -->
+<div id="articulos-destacados">
+<h2>Artículos Destacados</h2>
+<ul>
+<li><a href="Armjuegos.html">El Ascenso de ARM en el Horizonte del Gaming</a></li>
+<li><a href="callofduty6ia.html">Activision admite el uso de IA en Call of Duty: Black Ops 6</a></li>
+<li><a href="lenovolegiongo.html">Lenovo Legion Go: El Origen de una Nueva Generación de Consolas Portátiles</a></li>
+</ul>
+</div>
+
+<!-- Enlaces de interés -->
+<div>
+<h2>Enlaces de Interés</h2>
+<ul>
+<li><a href="https://www.twitch.tv" target="_blank">Twitch - Streams en vivo</a></li>
+<li><a href="https://www.youtube.com/gaming" target="_blank">YouTube
+Gaming</a></li>
+</ul>
+</div>
+<footer>
+<hr/>
+<p>GameBlog - Todos los derechos reservados</p>
+<p>Contacto: <a href="mailto:contacto@gameblog.com">contacto@gameblog.com</a></p>
+</footer>
+</body>
+</html>

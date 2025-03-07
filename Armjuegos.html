@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<title>¿Juegos en ARM?</title>
+<link rel="stylesheet" type="text/css" href="css/estilos2.css" />
+    <body>
+        <p><a href="index.html"> Volver al inicio</a></p>
+        <h1>Gaming en ARM</h1>
+        <hr/>
+        <img src="armp.jpg" width="311" height="145" alt="ARM"/>
+
+        <p>
+            <h3>El Ascenso de ARM en el Horizonte del Gaming</h3>
+            La arquitectura ARM, históricamente relegada al ámbito de los dispositivos móviles y sistemas embebidos, emerge ahora como un contendiente de peso en el panorama del gaming. Este blog se propone como un espacio de análisis y debate en torno a esta transformación, explorando las implicaciones técnicas, comerciales y creativas de la creciente adopción de ARM en la industria de los videojuegos.
+        </p>
+        <p>
+            <h3>ARM vs x86: Una Batalla Arquitectónica</h3>
+            Antes de adentrarnos en el rendimiento de los juegos, es crucial entender las diferencias fundamentales entre la arquitectura Arm y la arquitectura x86, que ha dominado el mercado de las PC durante décadas.
+
+En pocas palabras, Arm utiliza un conjunto de instrucciones reducido (RISC) . Esto significa que sus procesadores ejecutan instrucciones más simples y consumen menos energía, lo que los hace ideales para dispositivos móviles. Una diferencia clave radica en cómo operan las instrucciones: en Arm, las instrucciones solo funcionan en registros, mientras que x86 puede usar operandos de memoria o registro con instrucciones ALU, lo que a veces permite realizar el mismo trabajo en menos instrucciones . Por otro lado, x86 se basa en un conjunto de instrucciones complejo (CISC) , que permite realizar tareas más complejas en un solo ciclo de reloj, pero a costa de un mayor consumo energético .   
+
+También existen diferencias en la concurrencia, el reordenamiento y el almacenamiento en caché entre ambas arquitecturas . Estas diferencias pueden afectar el rendimiento de los juegos, aunque el impacto exacto aún se está investigando.   
+
+Históricamente, x86 ha reinado en el mundo de las PC gaming gracias a su mayor rendimiento en bruto . Sin embargo, Arm ha ido ganando terreno, y algunas configuraciones actuales incluso superan a x86 en ciertas pruebas de rendimiento . 
+<img src="arm-vs-x86.webp" width="310" height="200" alt="ARM"/>
+
+</p>
+        <p>
+            <h3>Ejemplos de PC Gaming con Arm</h3>
+            Aunque todavía no son tan comunes como las PC con x86, ya existen varios ejemplos de PC gaming que utilizan procesadores Arm, cada uno con sus propias características y ventajas:
+
+Chromebooks con capacidad para juegos: Estos dispositivos, tradicionalmente conocidos por su bajo coste y enfoque en la productividad, están empezando a incorporar procesadores Arm más potentes que permiten ejecutar juegos de Android y, en algunos casos, incluso juegos de PC a través de servicios de streaming como GeForce Now.
+Dispositivos con Windows en Arm: Microsoft ha estado trabajando en la compatibilidad con Arm en Windows durante años, y con el lanzamiento de Windows 11 y los nuevos chips Snapdragon X Elite, estamos viendo un mayor impulso en este ámbito. Estos dispositivos prometen una mayor duración de la batería y un rendimiento comparable al de las PC con x86 en algunas tareas .   
+Adlink Ampere Altra: Esta estación de trabajo para desarrolladores cuenta con un procesador Arm de 128 núcleos y es compatible con tarjetas gráficas de gama alta como la NVIDIA RTX 4090 . Aunque está orientada a profesionales, demuestra el potencial de Arm en el ámbito de las PC de alto rendimiento.   
+Rock 5 ITX: Esta placa base en formato mini-ITX permite construir una PC de escritorio con un procesador Arm Rockchip RK3588 . Ofrece una gran variedad de opciones de conectividad y es compatible con sistemas operativos como Linux.
+        </p>
+
+        <p>
+            <h3>Rendimiento y Compatibilidad en Juegos</h3>
+
+El rendimiento de los juegos en PC gaming con Arm es un tema que genera debate. Aunque los procesadores Arm han mejorado significativamente, la compatibilidad con los juegos sigue siendo un desafío.
+
+Muchos juegos populares no son compatibles de forma nativa con Arm, lo que significa que deben ejecutarse a través de una capa de emulación como Rosetta 2 en macOS o Prism en Windows 11 . Prism funciona de forma transparente al convertir el código x86 o x64 al conjunto de instrucciones Arm64, sin necesidad de trabajo adicional por parte de los desarrolladores . Sin embargo, la emulación puede afectar al rendimiento, provocando una disminución de la velocidad de fotogramas o problemas gráficos .   
+
+A pesar de esto, hay juegos que funcionan bien en Arm, especialmente aquellos que están optimizados para la arquitectura o que no son muy exigentes a nivel gráfico. Microsoft afirma que más de 1200 juegos son compatibles con Windows en Arm a 30 fps o más .   
+
+Además, la tecnología de escalado de resolución mediante IA, como Automatic Super Resolution en Windows 11, puede ayudar a mejorar el rendimiento de los juegos en Arm .   
+
+Para ayudar a los gamers, existen sitios web como "Works on Windows on Arm" que listan la compatibilidad de los juegos con los procesadores Snapdragon X Elite . Estos sitios clasifican los juegos en categorías como "Perfecto", "Jugable", "Funciona" e "Injugable" para dar a los usuarios una idea de qué esperar.
+        
+
+<h3>Tabla Comparativa de Rendimiento</h3>
+<div id="comparativa-rendimiento">
+    <h2>Comparativa de Rendimiento de Juegos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Juego</th>
+                <th>Arm (Snapdragon X Elite)</th>
+                <th>x86 (Intel Core i9-13900H)</th>
+                <th>Arm (Apple M2 Ultra)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Horizon Zero Dawn</td>
+                <td>Jugable (Ajustes bajos)</td>
+                <td>Perfecto</td>
+                <td>Perfecto</td>
+            </tr>
+            <tr>
+                <td>Hitman 3</td>
+                <td>Jugable (Ajustes bajos)</td>
+                <td>Perfecto</td>
+                <td>Perfecto</td>
+            </tr>
+            <tr>
+                <td>Black Myth: Wukong</td>
+                <td>Injugable</td>
+                <td>Injugable</td>
+                <td>Injugable</td>
+            </tr>
+            <tr>
+                <td>Cyberpunk 2077</td>
+                <td>Funciona (con glitches)</td>
+                <td>Jugable</td>
+                <td>Jugable</td>
+            </tr>
+            <tr>
+                <td>Doom Eternal</td>
+                <td>Funciona (con glitches)</td>
+                <td>Jugable</td>
+                <td>Perfecto</td>
+            </tr>
+            <tr>
+                <td>Shadow of the Tomb Raider</td>
+                <td>Jugable</td>
+                <td>Perfecto</td>
+                <td>Perfecto</td>
+            </tr>
+            <tr>
+                <td>God of War</td>
+                <td>Funciona</td>
+                <td>Perfecto</td>
+                <td>Perfecto</td>
+            </tr>
+            <tr>
+                <td>Red Dead Redemption 2</td>
+                <td>Jugable</td>
+                <td>Perfecto</td>
+                <td>Perfecto</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</p>
+
+<p>
+    <h3>El Futuro de los PC Gaming con Arm</h3>
+    El futuro de los PC gaming con Arm es prometedor. A medida que la arquitectura madura y la compatibilidad con el software mejora, es probable que veamos una mayor adopción de Arm en el mundo del gaming.
+
+La eficiencia energética de Arm, combinada con su creciente rendimiento, la convierte en una opción atractiva para dispositivos portátiles y de bajo consumo. Además, la innovación en áreas como la emulación y el escalado de resolución mediante IA podría ayudar a superar las limitaciones actuales de rendimiento.
+
+Un ejemplo del potencial de Arm en el gaming es la Steam Deck de Valve , una consola portátil que ha demostrado que se pueden ejecutar juegos AAA con buen rendimiento en un dispositivo con arquitectura Arm.   
+
+Sin embargo, el éxito de Arm en el PC gaming dependerá en gran medida del apoyo de los desarrolladores de juegos y de la creación de un ecosistema de software sólido. Si empresas como NVIDIA y AMD se suman al carro y desarrollan controladores optimizados para Arm, podríamos estar ante un cambio de paradigma en el mundo del gaming, con dispositivos más potentes, eficientes y accesibles para todos.
+</p>
+<p>
+    <h3>Conclusion</h3>
+    Los PC gaming con Arm se encuentran en una etapa emocionante de desarrollo. Aunque todavía existen desafíos en cuanto a la compatibilidad y el rendimiento en juegos AAA, las ventajas en eficiencia energética, duración de la batería y potencial de innovación son innegables.
+
+Con el apoyo de la comunidad de desarrolladores y la continua evolución de la arquitectura, los PC gaming con Arm tienen el potencial de revolucionar la industria, ofreciendo a los gamers experiencias de juego más inmersivas, portátiles y accesibles que nunca. ¡El futuro del gaming es Arm, y estamos ansiosos por ver lo que nos depara!
+</p>
+
+
+
+    </body>
+    <br>
+    <footer>
+    Todos los derechos reservados©.
+    </footer>
+        </body>
+</html>
